@@ -12,8 +12,7 @@ data/
 result/
 dist/
 
-fasttext/fasttext.cpp
-facebookresearch-fasttext-*
+sent2vec/sent2vec.cpp
 
 # Intellij
 .idea/
