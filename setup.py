@@ -20,7 +20,7 @@ extensions = []
 
 if cython:
   extensions = [
-    Extension('*',
+    Extension('sent2vec',
       sources=[
         'sent2vec/sent2vec.pyx',
         'sent2vec/cpp/src/args.cc',
@@ -42,7 +42,7 @@ if cython:
   extensions = cythonize(extensions)
 else:
   extensions = [
-    Extension('*',
+    Extension('sent2vec',
       sources=[
         'sent2vec/sent2vec.cpp',
         'sent2vec/cpp/src/args.cc',
