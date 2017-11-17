@@ -41,8 +41,6 @@ setup(
     packages=['sent2vec'],
     ext_modules = cythonize(extensions),
     install_requires=[
-        'numpy>=1',
-        'future'
     ],
     classifiers= [
     ]
