@@ -12,8 +12,6 @@ data/
 result/
 dist/
 
-sent2vec/sent2vec.cpp
-
 # Intellij
 .idea/
 
