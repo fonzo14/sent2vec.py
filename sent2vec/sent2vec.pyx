@@ -11,7 +11,6 @@ cdef class FastTextWrapper:
     del self._ft
   def load_model(self, filename, encoding='utf-8'):
     self._ft.loadModel(builtins.bytes(filename, encoding))
-    print("model %s loaded" % filename)
   def text2vec(self, text, encoding='utf-8'):
     vec = self._ft.textVector(builtins.bytes(text, encoding))
     return str(vec, encoding).strip()
